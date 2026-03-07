@@ -5,21 +5,21 @@
 class Ramble < Formula
   desc "CLI for deploying Nomad packs and jobs"
   homepage "https://ramble.openwander.org"
-  version "0.5.4"
+  version "0.5.5"
   license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/open-wander/ramble/releases/download/v0.5.4/ramble_Darwin_x86_64.tar.gz"
-      sha256 "b528153528691ba5749f05c9d25dc68ab8ba5d17866f7349aa3b8ed86d4d3d91"
+      url "https://github.com/open-wander/ramble/releases/download/v0.5.5/ramble_Darwin_x86_64.tar.gz"
+      sha256 "7de6e0b458c675956914c3746fc42359d66fab8063ac6ba74e860a438f9448de"
 
       define_method(:install) do
         bin.install "ramble"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/open-wander/ramble/releases/download/v0.5.4/ramble_Darwin_arm64.tar.gz"
-      sha256 "1d6dc7ad8ed605258f79179c0828c80b1cf426708ddb66c5a323b3042327267e"
+      url "https://github.com/open-wander/ramble/releases/download/v0.5.5/ramble_Darwin_arm64.tar.gz"
+      sha256 "65c998aefae65e8a700fe964174c1f05038336690676449dc2dfdeab589a0cfa"
 
       define_method(:install) do
         bin.install "ramble"
@@ -29,15 +29,15 @@ class Ramble < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/open-wander/ramble/releases/download/v0.5.4/ramble_Linux_x86_64.tar.gz"
-      sha256 "fbb56df75042851892974feef1f5c236e707cd0d850e8ba65b3b6f521dd69536"
+      url "https://github.com/open-wander/ramble/releases/download/v0.5.5/ramble_Linux_x86_64.tar.gz"
+      sha256 "643aa44ac9c3aef78e911e383ef9add701ab8c15867ac6da187d0942f34bf687"
       define_method(:install) do
         bin.install "ramble"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/open-wander/ramble/releases/download/v0.5.4/ramble_Linux_arm64.tar.gz"
-      sha256 "285a10cf3cc4d0189d30fb80f309c43407f44c49cf844372eea50a5ec8ac984b"
+      url "https://github.com/open-wander/ramble/releases/download/v0.5.5/ramble_Linux_arm64.tar.gz"
+      sha256 "6a0c7015e8ce8fb1ed7c95e7531621fc85d44ef94dfd11d4474f27674e95fc49"
       define_method(:install) do
         bin.install "ramble"
       end
