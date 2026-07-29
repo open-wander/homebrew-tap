@@ -1,23 +1,22 @@
 # Open Wander Homebrew Tap
 
-Homebrew formulae for [Open Wander](https://github.com/open-wander) tools.
+Homebrew packages for [Open Wander](https://github.com/open-wander) tools.
 
 ## Installation
 
 ```bash
-brew tap open-wander/tap
-brew install ramble
+brew install --cask open-wander/tap/ramble
 ```
 
-## Available Formulae
+## Available Packages
 
-| Formula | Description |
-|---------|-------------|
+| Cask | Description |
+|------|-------------|
 | `ramble` | CLI for deploying Nomad packs and jobs |
 
 ## Updating
 
 ```bash
 brew update
-brew upgrade ramble
+brew upgrade --cask ramble
 ```
